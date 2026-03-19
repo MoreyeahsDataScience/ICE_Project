@@ -7,7 +7,7 @@ from function import (
     mandatory_attributes_validation_with_llm,
     NormBased_Attribute_Recovery,
 )
-
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 st.title("🔍 Product Type Identifier & Validator")
 
 st.markdown("This system intelligently analyzes product descriptions to identify the product type and extract all relevant attributes in a structured format.\nIt further validates the extracted data against standard templates and applies intelligent rules to ensure completeness and accuracy.")
