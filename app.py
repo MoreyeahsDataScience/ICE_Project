@@ -10,6 +10,8 @@ from function import (
 
 st.title("🔍 Product Type Identifier & Validator")
 
+st.markdown("This system intelligently analyzes product descriptions to identify the product type and extract all relevant attributes in a structured format.\nIt further validates the extracted data against standard templates and applies intelligent rules to ensure completeness and accuracy.")
+
 uploaded_file = st.file_uploader("Upload Excel File with Pipe, Flange Templates and Norm Sheet", type=["xlsx"])
 
 if uploaded_file:
