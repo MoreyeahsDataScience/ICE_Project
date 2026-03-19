@@ -3,7 +3,7 @@ import pandas as pd
 import json
 
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 def load_template_sheets(filepath):
     pipe_template = pd.read_excel(filepath, sheet_name="Pipe_Template", header=None)
