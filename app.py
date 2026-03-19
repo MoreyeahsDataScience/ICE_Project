@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import openai
 from function import (
     load_template_sheets,
     process_description,
